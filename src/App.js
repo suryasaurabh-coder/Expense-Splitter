@@ -38,7 +38,7 @@ export default function App() {
     setStatus("saving");
     fetch(BASE, {
       method: "PUT",
-      headers: { "Content-Type": "application/json", "X-Master-Key": API_KEY },
+    headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ people: newPeople, expenses: newExpenses })
     })
       .then(() => { setStatus("saved"); setLastSaved(new Date()); })
