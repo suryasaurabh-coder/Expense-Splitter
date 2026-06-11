@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 
 const BIN_ID = "6a2a1856da38895dfeaa9f99";
-const API_KEY = "$2a$10$.VwggDh345uAEetzEJs.7.jHqUkcH6fsdbUSS.SvEWRTW/F1BFuS.";
+const API_KEY = process.env.REACT_APP_JSONBIN_KEY;
 const BASE = `https://api.jsonbin.io/v3/b/${BIN_ID}`;
 
 const DEFAULT_PEOPLE = ["Surya","Sandeep","Uma","Naveen","Sreyas","Ayush","Armaan","Ani","Manyu","Jay","Lochan","Harshit","Pranit","Sid"];
