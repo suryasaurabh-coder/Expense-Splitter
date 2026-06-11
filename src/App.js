@@ -22,7 +22,7 @@ export default function App() {
 
   // Load from JSONBin on mount
   useEffect(() => {
-    fetch(`${BASE}/latest`, { headers: { "X-Master-Key": API_KEY } })
+    fetch(BASE)
       .then(r => r.json())
       .then(data => {
         const rec = data.record;
