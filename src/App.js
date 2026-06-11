@@ -1,8 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 
-const BIN_ID = "6a2a1856da38895dfeaa9f99";
-const API_KEY = "$2a$10$t81gd4Zkypsbz.Ai8oS8GOfqVCph6c0X84Sr1OoFuSIkkTS7wI4SW";
-const BASE = `https://api.jsonbin.io/v3/b/${BIN_ID}`;
+const BASE = "/api/data";
 
 const DEFAULT_PEOPLE = ["Surya","Sandeep","Uma","Naveen","Sreyas","Ayush","Armaan","Ani","Manyu","Jay","Lochan","Harshit","Pranit","Sid"];
 const EXPENSE_TYPES = ["Excursion Tickets","Massage","Meals","Transport","Accommodation","Activities","Drinks","Shopping","Other"];
